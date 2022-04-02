@@ -80,13 +80,14 @@ a{
     .nav-list-desktop{
         display: none;
     }
-   .nav-mobile{
+    .nav-mobile{
         list-style: none;
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
-    .hamburguer{
+    /*Codigo para funcionar sem Js*/
+    /* .hamburguer{
         width: 22px;
         height: 22px;
         position: relative;
@@ -127,8 +128,63 @@ a{
         left: 12%;
         width: 70%;
         height: 15%;
+    } */
+    
+    /* Codigo para funcionar no Js */
+    .hamburguer{
+        width: 25px;
+        height: 25px;
+        position: relative;
+        z-index: 900;                    
     }
-.nav-list-mobile{
+    .hamburguer:after{
+        content: "";
+        position: absolute;
+        top: 38%;
+        left: 23%;
+        width: 55%;
+        height: 4%;
+        background-color: var(--gray);
+        transition: 1s ease;
+    }
+    .hamburguer:before{
+        content: "";
+        position: absolute;
+        top: 63%;
+        left: 23%;
+        width: 55%;
+        height: 4%;
+        background-color: var(--gray);
+        transition: 1s ease;
+    }   
+
+    .hamburguer.hamburguer-active{
+        width: 25px;
+        height: 25px;
+        position: relative;
+    }
+   .hamburguer-active.hamburguer::after{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 23%;
+        width: 55%;
+        height: 4%;
+        transform: rotate(225deg);
+        background-color: var(--gray);
+    }
+    .hamburguer-active.hamburguer::before{
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 23%;
+        transform: rotate(-405deg);
+        width: 55%;
+        height: 4%;
+        background-color: var(--gray);
+    }
+    /* Codigo para funcionar no Js */       
+    .nav-list-mobile{
         width: 100%;
         height: 0vh;
         position: fixed;
@@ -144,7 +200,14 @@ a{
         opacity: .5;
         transition: 1s ease;
     }    
-.nav-item-mobile{
+    /* Codigo para funcionar no Js */
+    .nav-list-mobile.active{
+        top: 0;
+        height: 100vh;
+        opacity: 1;
+    }
+    /* Codigo para funcionar no Js */
+    .nav-item-mobile{
         width: 100%;
         margin: 5px 0px;        
     }
