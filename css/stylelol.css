@@ -312,11 +312,8 @@ a{
 }
 @keyframes animate{
     0%{
-        opacity: 0;
-    }
-    50%{
         opacity: 1;
-    }
+    }    
     100%{
         opacity: 0;
     }
@@ -325,7 +322,16 @@ a{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;    
+    width: 100%;
+    animation: animate-video 2s ease forwards    
+}
+@keyframes animate-video{
+    0%{
+        opacity: .8;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 @media (max-width: 600px){
     .video-container{
