@@ -287,7 +287,7 @@ a{
     height: 100vh;
     padding-top: 30px;
     margin: 5px 0px;        
-    overflow: hidden; 
+    overflow: hidden;    
     align-items: baseline;  
     justify-content: center;     
 }
