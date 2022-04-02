@@ -327,3 +327,23 @@ a{
     left: 0;
     width: 100%;    
 }
+@media (max-width: 600px){
+    .video-container{
+        display: none;
+    }
+    .section h1{
+        font-size: 36px;
+        letter-spacing: -2px;
+    }
+    .section h3{
+        font-size: 18px;
+        letter-spacing: 0px;
+    }
+    .section{
+        background-image: url(../ImgVid/league-of-legends-phone-wallpapers-24_553bad6b51d43b2f49afd24b408569f2_raw.jpg); 
+        background-position: center;
+        background-size: cover;
+        display: block;
+        background-repeat: no-repeat;        
+    }
+}
