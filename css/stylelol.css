@@ -172,7 +172,7 @@ a{
         color: #888;
     }
 }
-.lol{
+/* .lol{
     width: 100%;
     height: 70vh;
     padding-top: 50px;
@@ -216,4 +216,51 @@ a{
     .lol{
         background-image: url(../ImgVid/league-of-legends-phone-wallpapers-24_553bad6b51d43b2f49afd24b408569f2_raw.jpg);        
     }    
+} */
+.section{    
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    padding-top: 30px;
+    margin: 5px 0px;        
+    overflow: hidden; 
+    align-items: baseline;  
+    justify-content: center;     
+}
+.section h1{ 
+    color: var(--white);
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: -5px;
+    z-index: 1;    
+    opacity: 1;
+    animation: animate 8s ease forwards;
+}
+.section h3{
+    color: var(--white);
+    font-size: 24px;
+    text-align: center;
+    letter-spacing: -2px;
+    font-weight: normal;    
+    z-index: 1;   
+    opacity: 1;
+    animation: animate 8s ease forwards;
+}
+@keyframes animate{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;    
 }
