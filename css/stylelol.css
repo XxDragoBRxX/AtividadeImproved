@@ -235,51 +235,6 @@ a{
         color: #888;
     }
 }
-/* .lol{
-    width: 100%;
-    height: 70vh;
-    padding-top: 50px;
-    margin: 5px 0px;
-    background-image: url(../ImgVid/League-of-Legends-Wallpaper-Full-HD-1920x1080.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;    
-}
-.container-lol{
-    max-width: 820px;
-    margin: 0 auto;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.h1-lol{
-    color: var(--white);
-    font-size: 48px;
-    text-align: center;
-    letter-spacing: -5px;
-}
-.h3-lol{
-    color: var(--white);
-    font-size: 24px;
-    text-align: center;
-    letter-spacing: -2px;
-    font-weight: normal;
-}
-@media (max-width:600px){
-    .h1-lol{
-        font-size: 36px;
-        letter-spacing: -2px;
-    }
-    .h3-lol{
-        font-size: 18px;
-        letter-spacing: 0px;
-    }
-    .lol{
-        background-image: url(../ImgVid/league-of-legends-phone-wallpapers-24_553bad6b51d43b2f49afd24b408569f2_raw.jpg);        
-    }    
-} */
 .section{    
     position: relative;
     display: flex;
@@ -351,5 +306,104 @@ a{
         background-size: cover;
         display: block;
         background-repeat: no-repeat;        
+    }
+}
+.text-inicial{
+    background-color: var(--black3);
+    width: 100%;
+    height: 102vh;    
+}
+.link-end{
+    color: var(--white);
+    text-decoration: none;
+    font-size: 12px;
+    opacity: .5;
+    transition: .5s ease;
+}
+.link-end::after{
+    content: ">";    
+}
+.link-end:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+.text-introduction{
+    position: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+    font-weight: normal;
+    color: var(--gray);
+    background-color: var(--black3);    
+}
+.videos-page{
+    width: 30%;
+    height: 50%;
+}
+.table-requisits{
+    border-color: var(--black3);    
+    border-style: double;
+    justify-content: center;
+    align-items: center;
+    color: var(--black1);
+    text-align: center;    
+    margin-left: 8%;
+}
+.final-text{
+    color: var(--black3);
+}
+.final-page{
+    width: 100%;
+    height: 86vh;
+    margin-top: 3250px;
+    background-color: var(--gray);
+}
+.link-start{
+    color: var(--black1);
+    text-decoration: none;
+    font-size: 12px;
+    opacity: .5;
+    transition: .5s ease;
+}
+.link-start::after{
+    content: ">";    
+}
+.link-start:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+.name{
+    font-size: 12px;
+}
+.caption{
+    justify-content: center;
+    align-items: center;    
+    color: var(--black1);
+}
+.figure-end{
+    opacity: .8;
+    transition: 1s ease;
+}
+.figure-end:hover{
+    opacity: 1;
+    text-decoration: underline;
+}
+@media (max-width: 600px){    
+    .table{        
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: -10%;       
+    }
+    .final-page{
+        height: 38vh;
+        margin-top: 1530px;
+    }
+    .text-introduction{
+        height: 150vh
     }
 }
