@@ -433,8 +433,7 @@ main p{
         display: flex;
         position: relative;           
     }
-    section .final-page{
-        display: grid;
-        height: 68vh;        
+    .final-page{
+        display: grid;              
     }    
 }
