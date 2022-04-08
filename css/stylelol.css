@@ -333,19 +333,6 @@ a{
     opacity: 1;
     text-decoration: underline;
 }
-.text-introduction{
-    position: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    padding-left: 15%;
-    padding-right: 15%;
-    font-weight: normal;
-    color: var(--gray);
-    background-color: var(--black3);    
-}
 .videos-page{
     width: 30%;
     height: 50%;
@@ -369,7 +356,7 @@ a{
     align-items: center;
     color: var(--gray);
     text-align: center;    
-    margin-left: 20%;
+    margin: 0 auto;
 }
 .final-text{
     color: var(--gray);
@@ -442,13 +429,12 @@ main p{
 }
 @media (max-width: 600px){    
     .table-requisits{
-        margin-left: 0;
+        margin: 0 auto;
         display: flex;
-        position: relative;        
+        position: relative;           
     }
     section .final-page{
         display: grid;
-        height: 68vh;
-        
+        height: 68vh;        
     }    
 }
