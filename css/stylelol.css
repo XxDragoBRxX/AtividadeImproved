@@ -433,6 +433,7 @@ main p{
 .section-text video{
     width: 50%;
     height: 50%;
+    border-radius: 10px;
 }
 .figure-end:hover{
     opacity: 1;
@@ -440,17 +441,14 @@ main p{
     text-decoration: #d6d6d6;
 }
 @media (max-width: 600px){    
-    .table{        
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin-left: -10%;       
+    .table-requisits{
+        margin-left: 0;
+        display: flex;
+        position: relative;        
     }
-    .final-page{
-        height: 38vh;
-        margin-top: 1530px;
-    }
-    .text-introduction{
-        height: 150vh
-    }
+    section .final-page{
+        display: grid;
+        height: 68vh;
+        
+    }    
 }
